@@ -32,9 +32,9 @@ int lns(char *str){
 }  
   
 int main(){  
-    char str[]="abcabc";  
+    char str[]="abcabcbb";  
     //scanf("%s", str);  
-    printf("length of longest non-repete substring: %d\n", lns(str));  
+    printf("该字符串内最长不重复的子串长度为: %d\n", lns(str));  
     system("pause");  
     return 0;     
 } 
