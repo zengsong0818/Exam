@@ -32,9 +32,10 @@ int lns(char *str){
 }  
   
 int main(){  
-    //char str[]="abcabcbb";  
-    char str[]="1231231122abc";  
-    //scanf("%s", str);  
+     //scanf("%s", str); 手动输入 
+    //char str[]="abcabcbb";第一次提交，纯字母  
+    //char str[]="1231231122abc";第二次提交 ，字母数字组合 
+    char str[]="aabbAABBabbbbABBBB";//字母大小写 
     printf("该字符串内最长不重复的子串长度为: %d\n", lns(str));  
     system("pause");  
     return 0;     
