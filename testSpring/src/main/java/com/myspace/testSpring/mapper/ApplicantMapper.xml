@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myspace.testSpring.mapper.ApplicantMapper">
+	<select id="getAllApplicant" resultType="Applicant" >
+		select * from applicant
+	</select>
+	<select id="getApplicant" resultType="Applicant" >
+		select * from applicant where name = #{0}
+	</select>
+	 <update id="updateValid" parameterType="Applicant">
+        update Applicant SET
+        isValid = #{1}
+        where name = #{0}
+     </update>
+</mapper>

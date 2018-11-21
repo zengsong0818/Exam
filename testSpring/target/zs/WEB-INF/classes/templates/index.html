@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{/bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
+<style type="text/css">
+#pos_center {
+	position: relative;
+	text-align:center
+}
+}
+</style>
+</head>
+<body id="pos_center">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3>选择查看类型：</h3>
+		</div>
+		<form>
+			<select name="selecttype" onchange="window.location=this.value;">
+				<option value="index">选择查看类型：</option>
+				<option value="applicant">显示驾照申请者列表</option>
+				<option value="user">显示商城顾客列表</option>
+				<option value="inputName">驾照资格审核情况</option>
+				<option value="inputStoreName">积分反馈情况</option>
+			</select>
+		</form>
+	</div>
+	<p>
+		<a href="../index.html" th:href="@{/test/index}">返回主页</a>
+	</p>
+
+</body>
+</html>

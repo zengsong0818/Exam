@@ -1,0 +1,20 @@
+package com.myspace.testSpring
+ 
+import com.myspace.testSpring.bean.Applicant;
+
+ 
+rule "license-rules"
+    when
+        a : Applicant( age >= 18) 
+    then
+        a.setIsValid(true);	
+       
+end
+
+rule "license-rules2"
+    when
+        a : Applicant( age < 18) 
+    then
+        a.setIsValid(false);
+        
+end

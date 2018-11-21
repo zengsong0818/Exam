@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{/bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
+<style type="text/css">
+#pos_center {
+	position: relative;
+	text-align:center
+}
+}
+</style>
+</head>
+<body id ="pos_center">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">申请驾照的结果是：</h3>
+			<span th:text="${result}"> </span>
+		</div>
+	</div>
+	<p>
+		<a href="../index.html" th:href="@{/test/index}">返回主页</a>
+	</p>
+</body>
+</html>

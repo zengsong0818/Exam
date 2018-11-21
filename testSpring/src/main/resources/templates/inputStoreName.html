@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{/bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
+<style type="text/css">
+#pos_center {
+	position: relative;
+	text-align:center
+}
+}
+</style>
+</head>
+<body id="pos_center">
+	<h2>Drools功能测试</h2>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">输入商城积分用户姓名：</h3>
+		</div>
+	</div>
+	<div>
+		<form th:action="@{/test/store}" method="post">
+			<input type="text" name="name" id="name"> <br> <br>
+			<input type="submit" value="提交">
+		</form>
+	</div>
+
+	<p>如果您点击提交，表单数据会传送到后台。</p>
+	<p></p>
+	<div th:include="index :: return"></div>
+</body>
+</html>
